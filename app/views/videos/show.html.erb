@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<dl class="dl-horizontal">
+  <dt>Nome:</dt>
+  <dd><%= @video.name %></dd>
+
+  <dt>Duração:</dt>
+  <dd><%= @video.duration %></dd>
+
+  <dt>Tipo:</dt>
+  <dd><%= @video.video_type %></dd>
+
+  <dt>Idade recomendada:</dt>
+  <dd><%= @video.recommended_age %></dd>
+</dl>
+
+<%= link_to 'Editar', edit_video_path(@video), class:"btn btn-warning" %>
+<%= link_to 'Voltar', videos_path, class:"btn btn-default" %>
